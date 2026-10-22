@@ -2,31 +2,38 @@
 
 [简体中文](README.md) · **English**
 
-> A Java-first Runtime and SDK for agent applications that have to survive real product constraints.
+Haifa Agent gives Java teams the building blocks for AI assistants, along with applications that show what they can do: from working in a codebase to researching information and carrying multi-step tasks forward.
 
-Haifa Agent helps AI agent developers and software engineers build dependable agent applications in Java and Spring. Start with a small integration, then add model calls, tools, MCP, skills, memory, workspace access, policy, credentials, persistence, and recovery only when your product needs them.
+## What you can build
 
-## Why Haifa Agent
+### Coding Agent
 
-- **From prototype to product.** Build beyond a single model response when your agent must work with business rules, tools, and durable state.
-- **Runtime behavior you can reason about.** Run lifecycles, capability boundaries, policy decisions, and recovery behavior are explicit and testable rather than opaque.
-- **Java first, Spring when it helps.** Keep the core lightweight and Java-native, with optional Spring Boot support for integration into existing services.
+Understand a task in a code repository, edit files, and run builds and tests. Work can continue across multiple conversations, with developers setting the working boundaries and confirming important actions.
 
-## Proven in four product implementations
+[Explore Haifa Agent →](https://github.com/haifa-agent/haifa-agent)
 
-The Runtime and SDK already underpin four product implementations. They exercise a shared foundation for long-running work, controlled capabilities, durable state, and recovery without forcing all product semantics into the core.
+### DeerFlow AI Workbench
 
-- **Coding Agent** — recoverable coding sessions and controlled developer workflows.
-- **Personal Assistant** — an interactive assistant product with a trusted local host.
-- **Mission** — durable mission planning and execution across multiple tasks.
-- **Deep Research** — bounded, evidence-aware research workflows.
+A locally runnable workbench for research, files, and multi-step tasks through conversation. It reuses the interface and interaction model of ByteDance's open-source [DeerFlow](https://github.com/bytedance/deer-flow). Follow task progress, review actions that need approval, and collect the results in one place.
 
-## Start here
+[Explore Haifa Super Harness →](https://github.com/haifa-agent/haifa-agent-super-harness)
 
-| Repository | Start here for |
+### Personal Assistant
+
+A local assistant for ongoing conversations, web searches, and everyday tasks. It can retain information you allow it to remember and take on more specific work through added capabilities.
+
+### Turn conversations into ongoing work
+
+- **Mission** — Break a longer-term goal into steps, keep track of progress, and pick up where you left off.
+- **Deep Research** — Gather and organize information from multiple sources into a report whose sources can be checked.
+
+## Explore the repositories
+
+| Repository | What you'll find |
 | --- | --- |
-| [haifa-agent](https://github.com/haifa-agent/haifa-agent) | Runtime, SDK, agent applications, and examples |
+| [haifa-agent](https://github.com/haifa-agent/haifa-agent) | Java agent foundations, Coding Agent, Personal Assistant, and examples |
+| [haifa-agent-super-harness](https://github.com/haifa-agent/haifa-agent-super-harness) | A local AI workbench using DeerFlow's interface |
+| [haifa-agent-evals](https://github.com/haifa-agent/haifa-agent-evals) | Agent evaluation cases |
+| [haifa-agent-eval-infra](https://github.com/haifa-agent/haifa-agent-eval-infra) | Evaluation tools and runtime |
 | [haifa-agent-test-config](https://github.com/haifa-agent/haifa-agent-test-config) | Shared test configuration |
-| [haifa-agent-evals](https://github.com/haifa-agent/haifa-agent-evals) | Agent evaluation suites and cases |
-| [haifa-agent-eval-infra](https://github.com/haifa-agent/haifa-agent-eval-infra) | Evaluation infrastructure |
 | [haifa-agent-autonomous-delivery-assets](https://github.com/haifa-agent/haifa-agent-autonomous-delivery-assets) | Assets for autonomous delivery |
