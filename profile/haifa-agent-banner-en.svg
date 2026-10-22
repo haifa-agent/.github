@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Haifa Agent: Build agents that see a task through</title>
+  <desc id="desc">From code and research to work that takes multiple steps.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#19152c"/><stop offset=".58" stop-color="#30235c"/><stop offset="1" stop-color="#173b50"/></linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a78bfa" stop-opacity=".85"/><stop offset="1" stop-color="#57d5c2" stop-opacity=".7"/></linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".13"/><stop offset="1" stop-color="#fff" stop-opacity=".045"/></linearGradient>
+  </defs>
+  <rect width="1200" height="320" rx="24" fill="url(#bg)"/>
+  <circle cx="1000" cy="15" r="195" fill="#8c6ae7" opacity=".12"/>
+  <circle cx="1130" cy="285" r="165" fill="#4dc7bd" opacity=".1"/>
+  <path d="M0 270C240 210 390 350 650 270s375-100 550-45" fill="none" stroke="#fff" stroke-opacity=".07" stroke-width="1"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="64" y="48" width="37" height="37" rx="11" fill="url(#glow)"/>
+    <text x="82.5" y="74" text-anchor="middle" font-size="21" font-weight="800" fill="#19152c">H</text>
+    <text x="115" y="73" fill="#d8d0f4" font-size="16" font-weight="600" letter-spacing="1.5">HAIFA AGENT</text>
+    <text x="64" y="151" fill="#fff" font-size="43" font-weight="750" letter-spacing="-1">Build agents that see a task through</text>
+    <text x="66" y="193" fill="#d7d3e5" font-size="19">From code and research to work that takes multiple steps.</text>
+    <g font-size="13" font-weight="600">
+      <rect x="64" y="226" width="132" height="34" rx="17" fill="#fff" fill-opacity=".1" stroke="#fff" stroke-opacity=".16"/>
+      <text x="130" y="248" text-anchor="middle" fill="#f0ecff">Coding Agent</text>
+      <rect x="206" y="226" width="165" height="34" rx="17" fill="#fff" fill-opacity=".1" stroke="#fff" stroke-opacity=".16"/>
+      <text x="288.5" y="248" text-anchor="middle" fill="#f0ecff">DeerFlow AI Workbench</text>
+      <rect x="381" y="226" width="158" height="34" rx="17" fill="#fff" fill-opacity=".1" stroke="#fff" stroke-opacity=".16"/>
+      <text x="460" y="248" text-anchor="middle" fill="#f0ecff">Personal Assistant</text>
+    </g>
+    <g transform="translate(760 66)">
+      <rect width="365" height="190" rx="18" fill="url(#panel)" stroke="#fff" stroke-opacity=".18"/>
+      <text x="26" y="38" fill="#fff" font-size="14" font-weight="650">Work in progress</text>
+      <rect x="26" y="57" width="313" height="1" fill="#fff" fill-opacity=".15"/>
+      <circle cx="38" cy="86" r="9" fill="#6dd6ba"/>
+      <path d="m34 86 3 3 6-7" fill="none" stroke="#153d3a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="60" y="91" fill="#fff" font-size="14">Understand the task and its context</text>
+      <circle cx="38" cy="124" r="9" fill="#a78bfa"/>
+      <circle cx="38" cy="124" r="3" fill="#fff"/>
+      <text x="60" y="129" fill="#fff" font-size="14">Work through the steps</text>
+      <circle cx="38" cy="162" r="9" fill="#fff" fill-opacity=".15"/>
+      <text x="60" y="167" fill="#c9c5d7" font-size="14">Review actions and results</text>
+    </g>
+  </g>
+</svg>
