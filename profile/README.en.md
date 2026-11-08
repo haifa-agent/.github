@@ -1,75 +1,39 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/haifa-agent/.github/master/profile/haifa-agent-banner-en.svg" alt="Haifa Agent: Build agents that see a task through, from code and research to multi-step work" width="100%">
-</p>
+# Haifa Agent
 
-<p align="center"><a href="README.md">简体中文</a> · <strong>English</strong></p>
+[简体中文](https://github.com/haifa-agent) · English · [Website](https://haifa-portal.pages.dev/en/)
 
-<p align="center">
-  <a href="https://github.com/haifa-agent/haifa-agent">Explore Haifa Agent</a>　·　
-  <a href="https://github.com/haifa-agent/haifa-agent-super-harness">Explore the AI workbench</a>　·　
-  <a href="https://github.com/haifa-agent/haifa-agent/blob/dev/docs/get-started/quickstart.md">Get started with Java</a>
-</p>
+Add agents to Java applications with the Haifa Agent SDK, build a coding client with Agent Host, or get to work with Coding Agent and Super Harness.
 
-Haifa Agent gives Java teams the building blocks for AI assistants, along with applications that show what they can do: from working in a codebase to researching information and carrying multi-step tasks forward.
+## Build your own application
 
-## Start with the work you need to do
+### Haifa Agent SDK
 
-<table>
-  <tr>
-    <td width="56" align="center" valign="top"><strong>01</strong></td>
-    <td valign="top">
-      <h3>⌘ Coding Agent</h3>
-      <p>Understand a task in a code repository, edit files, and run builds and tests. Work can continue across multiple conversations, with developers setting the working boundaries and confirming important actions.</p>
-      <a href="https://github.com/haifa-agent/haifa-agent">Explore Haifa Agent →</a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" valign="top"><strong>02</strong></td>
-    <td valign="top">
-      <h3>✦ DeerFlow AI Workbench</h3>
-      <p>A locally runnable workbench for research, files, and multi-step tasks through conversation. It reuses the interface and interaction model of ByteDance's open-source <a href="https://github.com/bytedance/deer-flow">DeerFlow</a>. Follow progress, review actions that need approval, and collect the results in one place.</p>
-      <a href="https://github.com/haifa-agent/haifa-agent-super-harness">Explore Haifa Super Harness →</a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" valign="top"><strong>03</strong></td>
-    <td valign="top">
-      <h3>◉ Personal Assistant</h3>
-      <p>A local assistant for ongoing conversations, web searches, and everyday tasks. It can retain information you allow it to remember and take on more specific work through added capabilities.</p>
-      <a href="https://github.com/haifa-agent/haifa-agent">Explore Personal Assistant →</a>
-    </td>
-  </tr>
-</table>
+Bring models, conversations, and business tools into an existing Java or Spring Boot application. For example, expose order lookup as a tool, let the agent draft a support ticket, and hand the draft back to your application's review and submission flow.
 
-## Keep work moving
+[Java quickstart](https://haifa-portal.pages.dev/en/docs/agent/get-started/quickstart/) · [Java tool example](https://haifa-portal.pages.dev/en/docs/agent/examples/typed-tool/)
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Mission · Ongoing tasks</h3>
-      <p>Break a longer-term goal into steps, keep track of progress, and pick up where you left off.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>Deep Research · Source-led research</h3>
-      <p>Gather and organize information from multiple sources into a report whose sources can be checked.</p>
-    </td>
-  </tr>
-</table>
+### Agent Host (developer preview)
 
-## For Java developers
+Build an interface for code review, test troubleshooting, or an internal engineering workspace. Your client displays sessions, tool activity, and approvals. Agent Host manages authorized workspaces and runs the task. Compare the same task in the terminal and Coding Web to see how both connect to a local Host. Coding Web is also in developer preview.
 
-Start with a simple conversation, then add tools, memory, human review, and task recovery as needed. Spring Boot support is available when it fits your app.
+[Build a client with the Coding SDK](https://haifa-portal.pages.dev/en/docs/agent/coding-sdk/) · [Terminal and web examples](https://haifa-portal.pages.dev/en/docs/agent/coding-agent/#reference-products) · [Agent Host protocol and API](https://haifa-portal.pages.dev/en/docs/agent/agent-host/)
 
-<p><a href="https://github.com/haifa-agent/haifa-agent/blob/dev/docs/get-started/quickstart.md"><strong>Read the Java SDK quickstart →</strong></a></p>
+## Use the applications
 
-## Explore the repositories
+### Coding Agent
 
-| Repository | What you'll find |
-| --- | --- |
-| [haifa-agent](https://github.com/haifa-agent/haifa-agent) | Java agent foundations, Coding Agent, Personal Assistant, and examples |
-| [haifa-agent-super-harness](https://github.com/haifa-agent/haifa-agent-super-harness) | A local AI workbench using DeerFlow's interface |
-| [haifa-agent-evals](https://github.com/haifa-agent/haifa-agent-evals) | Coding Agent evaluation cases |
-| [haifa-agent-eval-viewer](https://github.com/haifa-agent/haifa-agent-eval-viewer) | Browse evaluation runs and results |
-| [haifa-agent-eval-infra](https://github.com/haifa-agent/haifa-agent-eval-infra) | Tools and runtime for agent evaluations |
-| [haifa-agent-test-config](https://github.com/haifa-agent/haifa-agent-test-config) | Shared test configuration |
-| [haifa-agent-autonomous-delivery-assets](https://github.com/haifa-agent/haifa-agent-autonomous-delivery-assets) | Evaluation cases and capability levels for autonomous delivery |
+Open a terminal in your project and describe the change you want. Follow Coding Agent as it reads code, edits files, and runs builds and tests. Review actions that require your approval.
+
+[Download Coding Agent](https://github.com/haifa-agent/haifa-agent/releases/latest) · [Watch the task demos](https://haifa-portal.pages.dev/en/docs/agent/coding-agent/#coding-task-demos)
+
+### Super Harness
+
+Add source material and describe the task in a local workspace. Follow progress, handle approvals, and inspect or download the finished files. For example, turn a set of research notes into a briefing. Super Harness reuses the interface and interactions from ByteDance's open-source DeerFlow project and runs tasks through the Haifa Agent SDK.
+
+[Install Super Harness](https://haifa-portal.pages.dev/en/docs/super-harness/get-started/installation/) · [Complete your first task](https://haifa-portal.pages.dev/en/docs/super-harness/get-started/first-task/) · [DeerFlow upstream](https://github.com/bytedance/deer-flow)
+
+## Shared execution
+
+The general SDK and Agent Host both build on Haifa Agent Runtime for model calls, tool execution, human interaction, and run state. Haifa Agent also includes Personal Assistant for local conversations and research.
+
+[Products and technology stack](https://haifa-portal.pages.dev/en/#product-stack) · [Haifa Agent source](https://github.com/haifa-agent/haifa-agent) · [Super Harness source](https://github.com/haifa-agent/haifa-agent-super-harness)

@@ -1,75 +1,39 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/haifa-agent/.github/master/profile/haifa-agent-banner.svg" alt="Haifa Agent：让 Agent 把事情做完，从代码、资料研究，到持续推进多步任务" width="100%">
-</p>
+# Haifa Agent
 
-<p align="center"><strong>简体中文</strong> · <a href="README.en.md">English</a></p>
+简体中文 · [English](https://github.com/haifa-agent/.github/blob/master/profile/README.en.md) · [官网](https://haifa-portal.pages.dev/zh-cn/)
 
-<p align="center">
-  <a href="https://github.com/haifa-agent/haifa-agent">了解 Haifa Agent</a>　·　
-  <a href="https://github.com/haifa-agent/haifa-agent-super-harness">体验 AI 工作台</a>　·　
-  <a href="https://github.com/haifa-agent/haifa-agent/blob/dev/docs/get-started/quickstart.md">接入 Java 项目</a>
-</p>
+用 Haifa Agent SDK 把 Agent 接入 Java 应用，用 Agent Host 构建自己的编程客户端，或直接使用 Coding Agent 和 Super Harness 完成任务。
 
-Haifa Agent 为 Java 团队提供构建 AI 助手的基础能力，也把这些能力做成可以直接了解的应用：从写代码、资料研究，到持续推进多步任务。
+## 构建自己的应用
 
-## 从你要完成的事开始
+### Haifa Agent SDK
 
-<table>
-  <tr>
-    <td width="56" align="center" valign="top"><strong>01</strong></td>
-    <td valign="top">
-      <h3>⌘ Coding Agent</h3>
-      <p>在代码仓库里理解问题、修改文件并运行构建和测试。任务可以跨多轮对话继续推进；开发者可以设定工作范围，并在关键操作前确认。</p>
-      <a href="https://github.com/haifa-agent/haifa-agent">查看 Haifa Agent →</a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" valign="top"><strong>02</strong></td>
-    <td valign="top">
-      <h3>✦ DeerFlow AI 工作台</h3>
-      <p>一个可在本地运行的 AI 工作台，用对话完成资料检索、文件处理和多步骤任务。它复用了字节跳动开源项目 <a href="https://github.com/bytedance/deer-flow">DeerFlow</a> 的界面与交互方式；你可以查看进展、确认需要审批的操作，并获取整理好的结果。</p>
-      <a href="https://github.com/haifa-agent/haifa-agent-super-harness">查看 Haifa Super Harness →</a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" valign="top"><strong>03</strong></td>
-    <td valign="top">
-      <h3>◉ Personal Assistant</h3>
-      <p>在自己的电脑上持续对话、搜索信息和处理日常任务。它可以记住获准保留的信息，也能通过扩展能力处理更具体的工作。</p>
-      <a href="https://github.com/haifa-agent/haifa-agent">了解 Personal Assistant →</a>
-    </td>
-  </tr>
-</table>
+把模型、多轮对话和业务工具接进现有 Java 或 Spring Boot 应用。例如，把订单查询注册为工具，让 Agent 根据用户需求整理工单草稿，再交给应用原有的确认和提交流程。
 
-## 让任务持续向前
+[Java 快速开始](https://haifa-portal.pages.dev/zh-cn/docs/agent/get-started/quickstart/) · [Java 工具示例](https://haifa-portal.pages.dev/zh-cn/docs/agent/examples/typed-tool/)
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Mission · 长期任务</h3>
-      <p>把一个长期目标拆成多个步骤，持续记录进展，方便之后接着推进。</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>Deep Research · 资料研究</h3>
-      <p>搜集和整理多方资料，形成带来源线索的研究报告，便于核对结论。</p>
-    </td>
-  </tr>
-</table>
+### Agent Host（开发预览）
 
-## 给 Java 开发者
+为代码审查、测试排障或内部工程工作台做自己的界面。客户端呈现会话、工具活动和审批，Agent Host 管理授权工作区并推进任务。可以对照终端和 Coding Web 的同任务示例，了解两种界面怎样接入本机 Host。Coding Web 也处于开发预览。
 
-从一次简单对话开始，再按需要加入工具、记忆、人工确认和任务恢复；也可以接入已有的 Spring Boot 服务。
+[Coding SDK 自建教程](https://haifa-portal.pages.dev/zh-cn/docs/agent/coding-sdk/) · [终端与 Web 示例](https://haifa-portal.pages.dev/zh-cn/docs/agent/coding-agent/#reference-products) · [Agent Host 协议与 API](https://haifa-portal.pages.dev/zh-cn/docs/agent/agent-host/)
 
-<p><a href="https://github.com/haifa-agent/haifa-agent/blob/dev/docs/get-started/quickstart.md"><strong>阅读 Java SDK 快速开始 →</strong></a></p>
+## 直接使用
 
-## 浏览项目
+### Coding Agent
 
-| 项目 | 你会看到什么 |
-| --- | --- |
-| [haifa-agent](https://github.com/haifa-agent/haifa-agent) | Java Agent 基础能力、Coding Agent、Personal Assistant 与示例 |
-| [haifa-agent-super-harness](https://github.com/haifa-agent/haifa-agent-super-harness) | 基于 DeerFlow 界面的本地 AI 工作台 |
-| [haifa-agent-evals](https://github.com/haifa-agent/haifa-agent-evals) | Coding Agent 评测案例 |
-| [haifa-agent-eval-viewer](https://github.com/haifa-agent/haifa-agent-eval-viewer) | 查看评测过程和结果 |
-| [haifa-agent-eval-infra](https://github.com/haifa-agent/haifa-agent-eval-infra) | 运行 Agent 评测的工具与环境 |
-| [haifa-agent-test-config](https://github.com/haifa-agent/haifa-agent-test-config) | 共享测试配置 |
-| [haifa-agent-autonomous-delivery-assets](https://github.com/haifa-agent/haifa-agent-autonomous-delivery-assets) | 自主交付评测案例与能力分级材料 |
+在项目目录打开终端，描述你想做的改动。跟着 Coding Agent 阅读代码、修改文件、运行构建和测试，并在需要时确认操作。
+
+[下载 Coding Agent](https://github.com/haifa-agent/haifa-agent/releases/latest) · [查看任务演示](https://haifa-portal.pages.dev/zh-cn/docs/agent/coding-agent/#coding-task-demos)
+
+### Super Harness
+
+在本地工作台提供资料、说明目标，跟进执行和审批，再检查并下载生成的成果。例如，把几份调研资料整理成一份简报。Super Harness 复用字节跳动开源项目 DeerFlow 的界面与交互方式，由 Haifa Agent SDK 驱动任务执行。
+
+[安装 Super Harness](https://haifa-portal.pages.dev/zh-cn/docs/super-harness/get-started/installation/) · [跟做第一次任务](https://haifa-portal.pages.dev/zh-cn/docs/super-harness/get-started/first-task/) · [DeerFlow 上游项目](https://github.com/bytedance/deer-flow)
+
+## 共享执行基础
+
+通用 SDK 和 Agent Host 都建立在 Haifa Agent Runtime 上，共享模型调用、工具执行、人工交互和运行状态管理。Haifa Agent 还内置 Personal Assistant，可用于本地对话和资料研究。
+
+[产品与技术栈](https://haifa-portal.pages.dev/zh-cn/#product-stack) · [Haifa Agent 源码](https://github.com/haifa-agent/haifa-agent) · [Super Harness 源码](https://github.com/haifa-agent/haifa-agent-super-harness)
